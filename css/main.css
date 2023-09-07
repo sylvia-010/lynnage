@@ -537,6 +537,9 @@ body .fortop .nav .group {
   padding-top: 1.28%;
   padding-bottom: 0.3%;
 }
+body .fortop .nav .group .left {
+  cursor: pointer;
+}
 body .fortop .nav .group .right {
   display: flex;
   margin-left: auto;
@@ -551,6 +554,9 @@ body .fortop .nav .group .right .theme {
 body .fortop .nav .group .right .theme .story {
   z-index: 1;
   padding-right: 15px;
+}
+body .fortop .nav .group .right .theme .story:hover a {
+  color: #a88f67;
 }
 body .fortop .nav .group .right .theme .story:hover .story_group {
   display: flex;
@@ -576,6 +582,9 @@ body .fortop .nav .group .right .theme .care {
   padding-right: 15px;
   z-index: 2;
 }
+body .fortop .nav .group .right .theme .care:hover a {
+  color: #a88f67;
+}
 body .fortop .nav .group .right .theme .care:hover .care_group {
   display: flex;
 }
@@ -599,6 +608,9 @@ body .fortop .nav .group .right .theme .care .care_group li a {
 body .fortop .nav .group .right .theme .facecare {
   padding-right: 15px;
   z-index: 3;
+}
+body .fortop .nav .group .right .theme .facecare:hover a {
+  color: #a88f67;
 }
 body .fortop .nav .group .right .theme .facecare:hover .facecare_group {
   display: flex;
@@ -624,6 +636,9 @@ body .fortop .nav .group .right .theme .facecare .facecare_group li a {
 body .fortop .nav .group .right .theme .news {
   padding-right: 15px;
   z-index: 4;
+}
+body .fortop .nav .group .right .theme .news:hover a {
+  color: #a88f67;
 }
 body .fortop .nav .group .right .theme .news:hover .news_group {
   display: flex;
@@ -1113,7 +1128,7 @@ body .footer #accordion_mb .accordion-item .accordion-collapse .accordion-body {
   padding: 0;
 }
 body .footer #accordion_mb .accordion-item .accordion-collapse .accordion-body ul li {
-  padding: 1% 4%;
+  padding: 1% 5%;
   border-bottom: 1px solid #fff;
 }
 body .footer #accordion_mb .accordion-item .accordion-collapse .accordion-body ul li a {
@@ -1517,10 +1532,8 @@ body .footer .forpc .bottom .right .cms .first_group {
   padding-top: 1.5%;
 }
 
-.main {
-  padding-bottom: 220px;
-}
 .main .founder_pic {
+  padding-bottom: 220px;
   text-align: center;
 }
 .main .founder_pic img {
@@ -1644,6 +1657,7 @@ body .activity .activity_right .moreinfo a:hover {
 body .pages {
   padding: 3% 4%;
   display: flex;
+  padding-bottom: 220px;
 }
 body .pages .pages_left .pagination > .page-item {
   border-radius: 0;
@@ -1698,6 +1712,7 @@ body .pages .pages_right {
   }
 }
 body .facecare_info {
+  padding-bottom: 220px;
   text-align: center;
   padding: 7%;
 }

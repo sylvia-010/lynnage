@@ -272,6 +272,9 @@ body {
             padding: 0 4.7%;
             padding-top: 1.28%;
             padding-bottom: 0.3%;
+            .left {
+                cursor: pointer;
+            }
 
             .right {
                 display: flex;
@@ -292,6 +295,9 @@ body {
 
 
                         &:hover {
+                            a {
+                                color: #a88f67;
+                            }
                             .story_group {
                                 display: flex;
                             }
@@ -329,6 +335,9 @@ body {
                         z-index: 2;
 
                         &:hover {
+                            a {
+                                color: #a88f67;
+                            }
                             .care_group {
                                 display: flex;
 
@@ -364,6 +373,9 @@ body {
                         z-index: 3;
 
                         &:hover {
+                            a {
+                                color: #a88f67;
+                            }
                             .facecare_group {
                                 display: flex;
                             }
@@ -400,6 +412,9 @@ body {
                         z-index: 4;
 
                         &:hover {
+                            a {
+                                color: #a88f67;
+                            }
                             .news_group {
                                 display: flex;
                             }
@@ -1030,7 +1045,7 @@ body {
 
                         ul {
                             li {
-                                padding: 1% 4%;
+                                padding: 1% 5%;
                                 border-bottom: 1px solid #fff;
 
                                 a {
