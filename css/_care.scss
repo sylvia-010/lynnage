@@ -1,0 +1,175 @@
+body {
+    .careintro {
+        background-color: #ededed;
+
+        .intro_group {
+            display: flex;
+            padding: 25px;
+
+            .intro_left {
+                flex: 1;
+                margin-right: 18px;
+
+                .left_photo {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .intro_right {
+                flex: 1;
+                padding-left: 18px;
+                text-align: center;
+                background-color: #fff;
+
+                .right_text {
+                    h1 {
+                        font-size: 38px;
+                        letter-spacing: 2px;
+                        margin-bottom: 12px;
+                    }
+
+                    h2 {
+                        font-size: 28px;
+                        color: #333333;
+                        padding: 15px 0;
+                        border-bottom: 1px dashed #333333;
+                        display: inline;
+                    }
+
+                    h4 {
+                        color: #333333;
+                        margin: 40px 0 20px;
+                        padding: 0 27px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        padding: 0 70px;
+                        padding-top: 5px;
+                        text-align: left;
+                        color: #333333;
+                    }
+
+                    .readmore {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .activity {
+        display: flex;
+        padding: 4% 4% 1% 4%;
+
+        .activity_left {
+            padding-right: 4%;
+
+            img {
+                width: 278px;
+            }
+        }
+
+        .activity_right {
+            h1 {
+                display: inline;
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+                color: #7b7b7b;
+                padding: 3% 4% 0 0;
+            }
+
+            .moreinfo {
+                a {
+                    font-size: 16px;
+                    padding: 1% 3%;
+                    color: #fff;
+                    background-color: #000;
+
+                    &:hover {
+                        background-color: #ded1b4;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .pages {
+        padding: 3% 4%;
+        display: flex;
+
+        .pages_left {
+            .pagination>.page-item {
+                border-radius: 0;
+                padding-right: 3%;
+
+                .page-link {
+                    color: #000;
+                    border-radius: 0;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+
+                .page-link05 {
+                    border: none;
+                    color: #000;
+                }
+                .bg {
+                    background-color: #000;
+                    color: #fff;
+                }
+                .feature {
+                    &:hover {
+                        background: #000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .pages_right {
+            margin-left: auto;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    body {
+        .main {
+            .careintro>.intro_group {
+                display: block;
+
+                .intro_left {
+                    margin: 0;
+                }
+
+                .intro_right {
+                    padding: 20px 0;
+                }
+            }
+
+            .activity {
+                display: block;
+                padding: 4% 3%;
+
+                .activity_left {
+                    padding-right: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .activity_right {
+                    padding: 1%;
+                }
+            }
+        }
+    }
+}

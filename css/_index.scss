@@ -3,6 +3,10 @@ body {
     margin: 0 auto;
     // overflow-x: hidden;
 
+   .fortop {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
     .header {
         padding: 0 3%;
         background-color: #a88f67;
@@ -46,6 +50,7 @@ body {
                     height: 100vh;
                     max-height: 0;
                     overflow: hidden;
+                    position: fixed;
 
                     .accordion {
                         position: relative;
@@ -190,48 +195,35 @@ body {
 
             .mid {
                 .search_pic {
-                    margin: 4px 12px;
                     cursor: pointer;
+                    background: #a88f67;
+                    border: none;
+                    color: transparent;
 
-                    &:hover {
-                        .search_group {
-                            display: block;
-                        }
+                    .dropdown-menu {
+                        position: relative;
+                        width: 100%;
+                        border: none;
+                        border-radius: 0;
+                        background-color: #fff;
+                        height: 100px;
 
-                    }
-
-                    .search_group {
-                        display: none;
-                        z-index: 2;
-                        left: 0px;
-                        position: absolute;
-                        background: #fff;
-                        width: 100vw;
-                        height: 93px;
-                        top: 42px;
-                        border-bottom: 1px solid #c6c6c6;
-
-                        .search_plc {
+                        li {
                             position: absolute;
-                            left: 295px;
-                            top: 0;
+                            left: 0;
+                            font-weight: bold;
 
-                            h2 {
-                                font-size: 17px;
-
-                            }
-
-                            .keyword {
-                                border: none;
-                                border-bottom: 1px solid #ccc;
-                                padding-bottom: 5px;
-                                width: 500px;
-                            }
                         }
 
-                        .deco {
-                            width: 100%;
-                            color: #ccc;
+                        .keyword {
+                            border: none;
+                            border-radius: 0;
+                            position: absolute;
+                            left: 15px;
+                            top: 35px;
+                            border-bottom: 1px solid #ccc;
+                            width: 600px;
+
                         }
                     }
                 }
@@ -268,12 +260,12 @@ body {
                     }
                 }
             }
-
         }
     }
 
     .nav {
         display: block;
+        background-color: #fff;
 
         .group {
             display: flex;
@@ -447,15 +439,17 @@ body {
             width: 100%;
             padding-top: 3%;
             border-bottom: 2px solid #000;
-            border-top: 1px solid #a88f67;
+            border-top: 1px solid #999999;
             position: relative;
         }
 
 
     }
+   }
 
     .main {
-
+        position: relative;
+        top: 170px;
         .swiper {
             width: 100%;
             height: 100%;
@@ -792,7 +786,7 @@ body {
 
     .brandintro {
         background-color: #ededed;
-        margin-top: -1%;
+        margin-top: 150px;
 
         .intro_group {
             display: flex;
@@ -829,54 +823,42 @@ body {
                             padding-right: 15px;
 
 
-                            a {
+                            button {
                                 font-size: 24px;
                                 color: #757575;
+                                border-radius: 0;
+                            }
+                            .nav-link.active {
+                                background-color: transparent;
+                                border-bottom: 2px dashed #000;
+                            }
+
+                        }
+
+                    }
+                    .tab-content {
+                        height: 280px;
+                        .tab-pane {
+                            color: #333333;
+    
+                            h1 {
+                                font-weight: normal;
+                                font-size: 38px;
+                                letter-spacing: 2px;
+                                margin-bottom: 12px;
+                            }
+    
+                            h2 {
+                                font-size: 24px;
+                            }
+    
+                            p {
+                                font-size: 12px;
+                                padding: 0 70px;
+                                padding-top: 5px;
+                                text-align: left;
                             }
                         }
-
-                        #brandstory,
-                        #Founder,
-                        #Philosophy {
-                            &:hover {
-                                a {
-                                    border-bottom: 2px dashed #000;
-                                    width: fit-content;
-                                    color: #000;
-                                    padding-bottom: 2px;
-                                }
-
-                            }
-                        }
-                    }
-
-                    #brandstory,
-                    #Founder,
-                    #Philosophy {
-                        color: #333333;
-
-                        h1 {
-                            font-weight: normal;
-                            font-size: 38px;
-                            letter-spacing: 2px;
-                            margin-bottom: 12px;
-                        }
-
-                        h2 {
-                            font-size: 24px;
-                        }
-
-                        p {
-                            font-size: 12px;
-                            padding: 0 70px;
-                            padding-top: 5px;
-                            text-align: left;
-                        }
-                    }
-
-                    .Founder,
-                    .Philosophy {
-                        display: none;
                     }
                 }
             }
@@ -1265,10 +1247,10 @@ body {
 
 @media (max-width: 980px) {
     body {
+       .fortop {
         .header {
             .group {
                 padding: 0.65% 9%;
-
                 .hmb {
                     display: block;
                 }
@@ -1330,9 +1312,35 @@ body {
                 }
             }
         }
+        .nav {
+            .group {
+                display: flex;
+                justify-content: center;
+                padding-top: 0;
+                padding-bottom: 1%;
+
+                .left {
+                    img {
+                        width: 70%;
+                        display: block;
+                        margin: auto;
+                    }
+                }
+
+                .right {
+                    display: none;
+                }
+            }
+            .fixedline {
+                padding-top: 0%;
+                border-top: none;
+            }
+        } 
+       }
 
 
         .main {
+            top: 118px;
             .content {
                 .container {
                     .wrap {
@@ -1371,11 +1379,8 @@ body {
             }
         }
 
-        .fixedline {
-            padding-top: 0.7%;
-        }
-
         .brandintro {
+            margin-top: 130px;
             .intro_group {
                 display: block;
 
@@ -1487,29 +1492,8 @@ body {
 
 @media (max-width: 767px) {
     body {
-        .nav {
-            padding: 0;
-            border: none;
-
-            .group {
-                display: flex;
-                justify-content: center;
-
-                .left {
-                    img {
-                        width: 70%;
-                        display: block;
-                        margin: auto;
-                    }
-                }
-
-                .right {
-                    display: none;
-                }
-            }
-        }
-
         .main {
+            top: 103px;
             .content {
                 padding: 0;
 
@@ -1575,15 +1559,19 @@ body {
             background-color: #ededed;
             padding: 60px 25px 50px;
             text-align: center;
+
             h1 {
                 font-size: 34px;
             }
+
             h2 {
                 font-size: 22px;
             }
+
             p {
                 padding: 3% 0;
             }
+
             .latest {
                 .post {
                     .bottom {
