@@ -2047,4 +2047,139 @@ body .facecare_info .swiper_mb .container .wrap .swiper-button-prev::after {
   .main .newsintro > .intro_group .intro_right {
     padding: 20px 0;
   }
+}
+.banner {
+  padding-top: 178px;
+}
+.banner img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contactinfo {
+  background-color: #fbfbfb;
+  text-align: center;
+  padding: 7% 10%;
+}
+.contactinfo h1 {
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+.contactinfo h2 {
+  font-size: 28px;
+}
+.contactinfo .contact_group {
+  display: flex;
+  padding-top: 5%;
+}
+.contactinfo .contact_group .info {
+  text-align: left;
+  flex: 1;
+  padding-right: 10px;
+}
+.contactinfo .contact_group .info h3 {
+  font-size: 22px;
+  color: #494949;
+  margin-bottom: 15px;
+}
+.contactinfo .contact_group .info .info_group {
+  display: flex;
+}
+.contactinfo .contact_group .info .info_group .info_left,
+.contactinfo .contact_group .info .info_group .info_right {
+  display: flex;
+}
+.contactinfo .contact_group .info .info_group .info_left img,
+.contactinfo .contact_group .info .info_group .info_right img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contactinfo .contact_group .info .info_group .info_left .info_text,
+.contactinfo .contact_group .info .info_group .info_right .info_text {
+  line-height: 6px;
+  padding: 0 10px;
+}
+.contactinfo .contact_group .info .info_group .info_left .info_text .text_group .eng,
+.contactinfo .contact_group .info .info_group .info_right .info_text .text_group .eng {
+  color: #a18f69;
+  font-weight: normal;
+  font-size: 24px;
+  white-space: nowrap;
+}
+.contactinfo .contact_group .info .info_group .info_left .info_text .text_group .ch,
+.contactinfo .contact_group .info .info_group .info_right .info_text .text_group .ch {
+  color: #2c2c2c;
+  font-size: 14px;
+}
+.contactinfo .contact_group .info .info_group .info_right {
+  align-items: end;
+}
+.contactinfo .contact_group .online {
+  text-align: left;
+  flex: 1;
+  padding-left: 10px;
+}
+.contactinfo .contact_group .online h3 {
+  font-size: 22px;
+  color: #494949;
+  margin-bottom: 25px;
+}
+.contactinfo .contact_group .online .form {
+  border: 2px solid #000;
+  width: 100%;
+  padding: 12% 7%;
+}
+.contactinfo .contact_group .online .form input,
+.contactinfo .contact_group .online .form textarea {
+  width: 100%;
+  padding: 7px;
+  margin: 5px;
+  border: 1px solid #e0e0e0;
+}
+.contactinfo .contact_group .online .form p {
+  font-size: 14px;
+  padding: 0 7px;
+}
+.contactinfo .contact_group .online .form .forbutton {
+  display: flex;
+  justify-content: end;
+}
+.contactinfo .contact_group .online .form .forbutton .remove {
+  margin: 0 2%;
+}
+.contactinfo .contact_group .online .form .forbutton .remove a {
+  color: #000;
+  border: 1px solid #cccccc;
+  padding: 8px 25px;
+}
+.contactinfo .contact_group .online .form .forbutton .send {
+  margin: 0 2%;
+}
+.contactinfo .contact_group .online .form .forbutton .send a {
+  color: #fff;
+  background-color: #000;
+  padding: 8px 25px;
+}
+.contactinfo .contact_group .online .form .forbutton .send a:hover {
+  background-color: #a18f69;
+}
+
+@media (max-width: 980px) {
+  body .banner {
+    padding-top: 105px;
+  }
+  body .contactinfo > .contact_group {
+    display: block;
+  }
+  body .contactinfo > .contact_group .info {
+    padding-right: 0;
+  }
+  body .contactinfo > .contact_group .info .info_group {
+    display: block;
+  }
+  body .contactinfo > .contact_group .online {
+    padding-top: 30px;
+    padding-left: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
