@@ -1,0 +1,298 @@
+.fortop>.header>.group>.right {
+    ul {
+        li {
+
+            h3,
+            .myaccount {
+                font-size: 14.5px;
+                color: #fff;
+                font-weight: normal;
+            }
+
+            .myaccount {
+                margin-top: -1px;
+            }
+        }
+
+        .loginformb {
+            display: none;
+        }
+    }
+}
+
+.main>.buying {
+    padding: 30px 5% 280px 5%;
+
+    h1 {
+        margin-left: 20px;
+    }
+
+    table {
+        width: 100%;
+
+        tbody {
+            border-bottom: 1px solid #cccccc;
+
+            .theme {
+                background-color: #f2f2f5;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                th {
+                    position: absolute;
+                    color: #666666;
+                }
+
+                .theme01 {
+                    left: 11%;
+                }
+
+                .theme02 {
+                    left: 43%;
+                }
+
+                .theme03 {
+                    left: 58%;
+                }
+
+                .theme04 {
+                    left: 74%;
+                }
+
+                .theme05 {
+                    left: 87%;
+                }
+
+            }
+
+            .item_pic {
+                display: inline;
+
+                .pic_group>img {
+                    padding: 20px;
+                }
+            }
+
+            .buyitem {
+                display: inline-block;
+                width: 80%;
+
+                td {
+                    font-weight: normal;
+                    width: 20%;
+
+                    .quantity {
+                        select {
+                            height: 35px;
+                            width: 70px;
+                            border-radius: 0;
+                        }
+                    }
+                }
+
+                .itemtext {
+                    width: 40%;
+                }
+
+                .item_name>h2,
+                h3 {
+                    font-size: 15px;
+                    font-weight: normal;
+                    text-align: left;
+                    color: #000;
+                }
+
+            }
+        }
+    }
+
+
+    .total {
+        display: flex;
+        flex-direction: row-reverse;
+        background: #f1f1f4;
+        height: 180px;
+        padding: 3%;
+        border-bottom: 1px solid #cccccc;
+
+        .describe {
+            width: 50%;
+
+            span {
+                display: flex;
+                font-size: 14px;
+                color: #595857;
+            }
+        }
+
+        .sum {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            .sum_top {
+                display: flex;
+                justify-content: right;
+
+                .sum_left,
+                .sum_right {
+                    text-align: right;
+                    padding-left: 20px;
+
+                    h4 {
+                        font-size: 18px;
+                    }
+
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .sum_bottom {
+                display: inline;
+                margin-left: auto;
+                font-size: 12px;
+            }
+        }
+    }
+
+
+    .choose {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+
+        .backtobuy {
+            border: 1px solid #bdbdbd;
+            padding: 0.7% 4.5%;
+            cursor: pointer;
+
+            a {
+                color: #4a4a4a;
+            }
+        }
+
+        .topay {
+            background-color: #000;
+            padding: 0.7% 10%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #a88f67;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 980px) {
+    .main>.buying {
+        table {
+            tbody {
+                border-bottom: none;
+                border-top: 1px solid #cccccc;
+                padding: 15px 0;
+                display: flex;
+
+                .theme {
+                    display: none;
+                }
+
+                .item_pic {
+                    width: 30%;
+
+                    .pic_group {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                .buyitem {
+                    display: inline-flex;
+                    flex-direction: column;
+                    width: auto;
+
+                    .itemtext,
+                    td {
+                        width: auto;
+                    }
+
+                    td:nth-child(3n) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .total {
+            display: block;
+            height: 222px;
+            border-bottom: none;
+
+            .describe {
+                width: 100%;
+
+                span {
+                    padding-right: 0;
+                }
+            }
+
+            .sum {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .sum_top {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .sum_left {
+                        text-align: left;
+                    }
+
+                    .sum_left,
+                    .sum_right {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+
+        .choose {
+            display: block;
+            text-align: center;
+            position: relative;
+
+            .backtobuy {
+                position: inherit;
+                top: 80px;
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .fortop>.header>.group>.right {
+        ul {
+            .loginformb {
+                display: block;
+            }
+
+            .memberinfo {
+                display: none;
+            }
+
+            .account {
+                display: none;
+            }
+        }
+    }
+}
