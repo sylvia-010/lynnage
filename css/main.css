@@ -2662,19 +2662,19 @@ body .facecare_info .swiper_mb .container .wrap .swiper-button-prev::after {
   padding: 40px 0;
   border-bottom: 1px solid #cccccc;
 }
+.pay_group .pay_top img {
+  width: 100%;
+}
 .pay_group .bottom_group {
   display: flex;
   padding-bottom: 220px;
+  gap: 20px;
 }
 .pay_group .bottom_group .pay_mid {
   flex: 1;
 }
 .pay_group .bottom_group .pay_mid h1 {
   font-size: 22px;
-}
-.pay_group .bottom_group .pay_mid .mid_group {
-  margin-right: 50px;
-  width: 515px;
 }
 .pay_group .bottom_group .pay_mid .mid_group .group {
   display: flex;
@@ -2692,7 +2692,7 @@ body .facecare_info .swiper_mb .container .wrap .swiper-button-prev::after {
   margin-bottom: 0;
 }
 .pay_group .bottom_group .pay_mid .mid_group .group .group_right {
-  flex-grow: 1;
+  width: 400px;
 }
 .pay_group .bottom_group .pay_mid .mid_group .group .group_right input {
   width: 100%;
@@ -2821,7 +2821,7 @@ body .facecare_info .swiper_mb .container .wrap .swiper-button-prev::after {
 
 @media (max-width: 980px) {
   .main > .pay_group {
-    padding: 0 3%;
+    padding: 0 20px;
   }
   .main > .pay_group .pay_top {
     display: block;
@@ -2836,6 +2836,17 @@ body .facecare_info .swiper_mb .container .wrap .swiper-button-prev::after {
   .main > .pay_group .bottom_group .pay_bottom {
     margin-top: 10%;
     max-width: none;
+  }
+  .pay_group .bottom_group .pay_mid .mid_group .group .group_left {
+    width: 100%;
+    text-align: left;
+  }
+  .pay_group .bottom_group .pay_mid .mid_group .group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pay_group .bottom_group .pay_mid .mid_group .group .group_right {
+    width: 100%;
   }
 }
 .activityinfo {
