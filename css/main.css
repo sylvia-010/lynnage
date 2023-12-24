@@ -2849,6 +2849,11 @@ body .facecare_info .swiper_mb .container .wrap .swiper-button-prev::after {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  body .main .pay_group .bottom_group .pay_mid .group .group_right .type03 p {
+    font-size: 10px;
+  }
+}
 .activityinfo {
   padding: 5px 100px 220px 100px;
 }
